@@ -1,0 +1,72 @@
+/* @theme custom */
+
+@import 'default';
+
+section {
+    justify-content: normal;
+    }
+
+section h2{
+    color: rgb(68, 67, 67);
+    font-size: 28px;
+    width: 93%;
+    border-bottom: 2px solid #D7D7D7;
+    position: absolute;
+    top:4%;
+    left:4%;
+}
+
+section h3{
+    font-size: 24px;
+}
+
+section p{
+    font-size: 20px;
+}
+
+section::after {
+    font-size:20px;
+    color:white;
+    bottom:10px;
+}
+
+.title h1 { /* タイトル文字のカスタム */
+    text-align: center; /* 中央揃え */
+    line-height: 1.6em; /* 文字と余白の１文の高さ */
+    border-bottom: 1px solid black; /* 要素の下の線　太さ　タイプ　色 */
+    padding-bottom: 0.8em; /* タイトル文字と線の余白 */
+}
+
+.info { /* 基本情報のカスタム */
+    text-align: center; /* 中央揃え */
+    margin-top: 1.6em; /* タイトルとの余白 */
+}
+
+:root {
+  --fw: 1;
+}
+/* ----- レイアウト ----- */
+.flex{
+  display: flex;
+  gap: 1em;
+}
+.sa {
+  justify-content: space-around;
+  /* border: 8px dashed rgb(15, 166, 226);
+  background-color: rgb(222, 244, 255); */
+}
+.sb {
+  justify-content: space-between;
+  /* border: 8px dashed rgb(21, 17, 255);
+  background-color: rgb(222, 244, 255); */
+}
+.sa div,.sb div{
+  margin: 0.1em;
+  /* border: 8px dashed rgb(80, 177, 109);
+  background-color: rgb(227, 250, 237); */
+}
+.fw div{
+  flex: var(--fw);
+  /* background-color: rgb(244, 238, 255);
+  border: 8px dashed rgb(93, 0, 255); */
+}/* ---------- */
